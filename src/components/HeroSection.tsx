@@ -29,7 +29,7 @@ const lines = [
   "enjoy reading, drawing, and diving ",
   "into history in my free time."
 ];
-const duration = 1.5;
+const duration = 1;
 const gap = 0.01;
     return (
       <section className="relative min-h-[150vh] bg-cover bg-top" style={{ backgroundImage: "url('/hero-image.png')" }}>
@@ -44,19 +44,17 @@ const gap = 0.01;
                 initial={{y: '100%', opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{duration: 0.8}}
-              >
-                    SHRISTY
+              >SHRISTY
                 </motion.div></div>
               <div><motion.div
                 initial={{y: '100%', opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{duration: 0.8, delay: 0.3}}
-              >
-                  CHAUDHARY
+              >CHAUDHARY
                 </motion.div></div>
             </div>
             <div className={`${unbounded.className} max-w-md text-lg sm:text-xl md:text-3xl`}>
-              <div className="-ml-40">
+              <div className="-ml-0 md:-ml-40">
                 {lines.map((line, i) => (
                   <motion.div
                     key={i}
