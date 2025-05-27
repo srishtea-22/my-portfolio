@@ -36,7 +36,7 @@ const lines = [
 const duration = 0.5;
 const gap = 0.01;
     return (
-      <motion.section className="relative min-h-[150vh] bg-cover bg-top" style={{ backgroundImage: "url('/hero-image.png')" , backgroundPositionY: smoothBackgroundY}}>
+      <motion.section className="relative min-h-[140vh] bg-cover bg-top" style={{ backgroundImage: "url('/hero-image.png')" , backgroundPositionY: smoothBackgroundY}}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div
           className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black"
@@ -58,8 +58,8 @@ const gap = 0.01;
               >CHAUDHARY
                 </motion.div></div>
             </div>
-            <div className={`${unbounded.className} max-w-md text-lg sm:text-xl md:text-3xl`}>
-              <div className="-ml-0 md:-ml-40">
+            <div className={`${unbounded.className} max-w-md text-base sm:text-xl md:text-3xl`}>
+              <div className="md:-ml-40">
                 {lines.map((line, i) => (
                   <motion.div
                     key={i}
