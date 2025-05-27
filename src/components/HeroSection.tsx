@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import {motion} from 'framer-motion'
+import {motion, useSpring, useTransform, useScroll} from 'framer-motion'
 import { Anton } from "next/font/google"
 import { Unbounded } from 'next/font/google'
 const anton = Anton({ subsets: ['latin'], weight: '400', display: 'swap' })
@@ -10,6 +10,10 @@ const unbounded = Unbounded({subsets: ['latin'], weight: '400', display: 'swap'}
 export default function HeroSection() {
 
 const [opacity, setOpacity] = useState(0.6);
+const {scrollY: motionScrollY} = useScroll();
+
+const backgroundY = useTransform(motionScrollY, (value) => value * 0.5);
+const smoothBackgroundY = useSpring(backgroundY, { stiffness: 50, damping: 20 });
 
 useEffect(() => {
   const handleScroll = () => {
@@ -22,22 +26,23 @@ useEffect(() => {
 }, []);
 
 const lines = [
-  "       I'm a full-stack developer ",
+  "             I'm a full-stack developer ",
   "based in Bengaluru and a second",
   "year Information Science and",
   "Engineering student at NMIT. I",
   "enjoy reading, drawing, and diving ",
   "into history in my free time."
 ];
-const duration = 1;
+const duration = 0.5;
 const gap = 0.01;
     return (
-      <section className="relative min-h-[150vh] bg-cover bg-top" style={{ backgroundImage: "url('/hero-image.png')" }}>
+      <motion.section className="relative min-h-[150vh] bg-cover bg-top" style={{ backgroundImage: "url('/hero-image.png')" , backgroundPositionY: smoothBackgroundY}}>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div
           className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black"
           style={{ opacity }}
         />
-        <div className="absolute inset-0 flex flex-col text-white transition duration-300 py-40 px-6 md:py-64 md:px-10">
+        <div className="absolute inset-0 flex flex-col text-white transition duration-300 py-40 px-6 md:py-50 md:px-10">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between space-y-10 md:space-y-0 md:space-x-10">
             <div className={`${anton.className} text-5xl sm:text-7xl md:text-9xl leading-tight`}>
               <div><motion.div
@@ -69,8 +74,10 @@ const gap = 0.01;
               </div>
             </div>
           </div>
+                  <div className="flex align-center justify-center relative z-10 mt-80">
+          <p className={`${unbounded.className} text-5xl`}>SKILLS</p>
         </div>
-      </section>
-
+        </div>
+      </motion.section>
     )
 }
