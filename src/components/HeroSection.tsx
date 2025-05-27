@@ -74,9 +74,9 @@ const gap = 0.01;
               </div>
             </div>
           </div>
-                  <div className="flex align-center justify-center relative z-10 mt-80">
-          <p className={`${unbounded.className} text-5xl`}>SKILLS</p>
-        </div>
+          <div className="flex items-center justify-center relative z-10 mt-80 mt-20 sm:mt-40 md:mt-80">
+            <p className={`${unbounded.className} text-3xl sm:text-4xl md:text-5xl`}>SKILLS</p>
+          </div>
         </div>
       </motion.section>
     )
