@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" style={{ opacity }}></div>
       </div>
 
-      <div className="relative z-10 grid grid-rows-[auto_auto] md:grid-cols-[auto_1fr] items-center">
+      <div className="relative z-10 grid grid-rows-[auto_auto] md:grid-cols-[auto_1fr] items-center text-white">
       <div className={`${anton.className} relative text-5xl sm:text-7xl md:text-9xl leading-tight pl-4 pt-10 md:pl-8 md:pt-20`}>
         <div>LET'S</div>
         <div>CONNECT</div>

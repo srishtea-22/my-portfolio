@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <div id="projects" className="bg-black md:pb-24">
             <div className="flex items-center justify-center pt-20 pb-10 md:pt-40 md:pb-30">
-                <p className={`${unbounded.className} text-3xl sm:text-4xl md:text-5xl`}>PROJECTS</p>
+                <p className={`${unbounded.className} text-white text-3xl sm:text-4xl md:text-5xl`}>PROJECTS</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8 md:gap-10 md:gap-y-40 bg-black text-white p-8 min-h-screen">

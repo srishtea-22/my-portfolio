@@ -23,7 +23,7 @@ export default function Navbar () {
         style={{
           backgroundColor: 'transparent', backdropFilter: `blur(${blur * 10}px)`
         }}>
-          <div className={`${unbounded.className} px-6 py-5 flex justify-end items-center space-x-6 text-base`}>
+          <div className={`${unbounded.className} text-white px-6 py-5 flex justify-end items-center space-x-6 text-base`}>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
