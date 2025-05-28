@@ -35,30 +35,30 @@ export default function Footer() {
         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" style={{ opacity }}></div>
       </div>
 
-      <div className="relative z-10 grid grid-cols-[auto_1fr] items-center">
-      <div className={`${anton.className} relative text-5xl sm:text-7xl md:text-9xl leading-tight md:pl-8 md:pt-20`}>
+      <div className="relative z-10 grid grid-rows-[auto_auto] md:grid-cols-[auto_1fr] items-center">
+      <div className={`${anton.className} relative text-5xl sm:text-7xl md:text-9xl leading-tight pl-4 pt-10 md:pl-8 md:pt-20`}>
         <div>LET'S</div>
         <div>CONNECT</div>
       </div>
       <div className={`flex flex-col ${unbounded.className} md:text-2xl md:gap-8 md:pt-16`}>
-        <div className="flex items-center gap-4 md:gap-8 justify-center">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 md:justify-center pb-5">
           Want to work together?
           <div>
-            <AnimatedButton text="CONTACT ME" className="w-40 md:w-[14rem]" />
+            <AnimatedButton text="CONTACT ME" className="w-40 md:w-[14rem]" href="mailto:shristychaudhary4679@gmail.com" />
             </div>
         </div>
-        <div className="flex items-center justify-center md:gap-8 md:pt-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 md:pt-8 pb-8">
             <div>
-            <AnimatedButton text="LINKEDIN" className="w-30 md:w-[10.5rem]" />
+            <AnimatedButton text="LINKEDIN" className="w-30 md:w-[10.5rem]" href="https://www.linkedin.com/in/shristy-chaudhary-3003002a5/" />
             </div>
             <div>
-            <AnimatedButton text="GITHUB" className="w-27 md:w-[9rem]" />
+            <AnimatedButton text="GITHUB" className="w-27 md:w-[9rem]" href="https://github.com/srishtea-22"/>
             </div>
             <div>
-            <AnimatedButton text="LEETCODE" className="w-34 md:w-[11.5rem]" />
+            <AnimatedButton text="LEETCODE" className="w-34 md:w-[11.5rem]" href="https://leetcode.com/u/srishtea_22/"/>
             </div>
             <div>
-            <AnimatedButton text="RESUME" className="w-28 md:w-[9.6rem]" />
+            <AnimatedButton text="RESUME" className="w-28 md:w-[9.6rem]" href="https://drive.google.com/file/d/1Cdqtsiwfru8JikM4C6M-PZsf0QamqI2f/view?usp=sharing"/>
             </div>
         </div>
       </div>

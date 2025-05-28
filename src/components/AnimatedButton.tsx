@@ -6,6 +6,7 @@ interface AnimatedButtonProps {
   className?: string; 
   repeatCount?: number;
   animationDuration?: number;
+  href: string;
 }
 
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({
@@ -13,6 +14,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   className,
   repeatCount = 10,
   animationDuration = 10,
+  href,
   
 }) => {
   const controls = useAnimation();
@@ -32,20 +34,32 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   };
 
   return (
-    <button
-      className={`border border-white text-white font-bold py-2 px-4 rounded-full transition-all overflow-hidden ${className || ''}`}
-      onMouseEnter={handleHoverStart}
-      onMouseLeave={handleHoverEnd}
+    <a
+      href={href}
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{
+        textDecoration: 'none',
+        color: 'inherit',
+        display: 'inline-block'
+      }}
     >
-      <motion.div
-        animate={controls}
-        className="flex whitespace-nowrap"
+      <button
+        className={`border border-white text-white font-bold py-2 px-4 rounded-full transition-all overflow-hidden cursor-pointer ${className || ''}`}
+        onMouseEnter={handleHoverStart}
+        onMouseLeave={handleHoverEnd}
+        type="button"
       >
-        {Array(repeatCount).fill(text).map((item, i) => (
-          <span key={i} className="mr-4">{item}</span>
-        ))}
-      </motion.div>
-    </button>
+        <motion.div
+          animate={controls}
+          className="flex whitespace-nowrap"
+        >
+          {Array(repeatCount).fill(text).map((item, i) => (
+            <span key={i} className="mr-4">{item}</span>
+          ))}
+        </motion.div>
+      </button>
+    </a>
   );
 };
 
