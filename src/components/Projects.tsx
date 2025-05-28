@@ -5,7 +5,7 @@ const anton = Anton({subsets: ['latin'], weight: '400', display: 'swap'})
 
 export default function Projects() {
     return (
-        <div className="bg-black">
+        <div className="bg-black md:pb-24">
             <div className="flex items-center justify-center pt-20 pb-10 md:pt-40 md:pb-30">
                 <p className={`${unbounded.className} text-3xl sm:text-4xl md:text-5xl`}>PROJECTS</p>
             </div>
