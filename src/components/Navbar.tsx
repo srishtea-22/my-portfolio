@@ -25,8 +25,8 @@ export default function Navbar () {
         }}>
           <div className={`${unbounded.className} px-6 py-5 flex justify-end items-center space-x-6 text-base`}>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#projects">Skills</a>
+            <a href="#contact">Projects</a>
           </div>
         </nav>
 
