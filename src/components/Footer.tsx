@@ -27,6 +27,7 @@ export default function Footer() {
 
   return (
     <motion.footer
+    id="contact"
       className="relative min-h-[60vh] bg-cover bg-center"
       style={{ backgroundImage: "url('/hero-image.png')", backgroundPositionY: smoothBackgroundY }}
     >

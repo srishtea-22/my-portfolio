@@ -24,9 +24,9 @@ export default function Navbar () {
           backgroundColor: 'transparent', backdropFilter: `blur(${blur * 10}px)`
         }}>
           <div className={`${unbounded.className} px-6 py-5 flex justify-end items-center space-x-6 text-base`}>
-            <a href="#about">About</a>
-            <a href="#projects">Skills</a>
-            <a href="#contact">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
 
