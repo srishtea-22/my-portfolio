@@ -59,7 +59,7 @@ export default function Footer() {
             <AnimatedButton text="LEETCODE" className="w-34 md:w-[11.5rem]" href="https://leetcode.com/u/srishtea_22/"/>
             </div>
             <div>
-            <AnimatedButton text="RESUME" className="w-28 md:w-[9.6rem]" href="https://drive.google.com/file/d/1Cdqtsiwfru8JikM4C6M-PZsf0QamqI2f/view?usp=sharing"/>
+            <AnimatedButton text="RESUME" className="w-28 md:w-[9.6rem]" href="https://drive.google.com/file/d/13Q7idYM3KLqGRw16qp0qw0QzbjYkjPaH/view?usp=sharing"/>
             </div>
         </div>
       </div>
