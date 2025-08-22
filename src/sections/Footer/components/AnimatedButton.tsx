@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { unbounded } from '@/lib/fonts';
 
 interface AnimatedButtonProps {
   text: string;
@@ -45,7 +46,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       }}
     >
       <button
-        className={`border border-white text-white font-bold py-2 px-4 rounded-full transition-all overflow-hidden cursor-pointer ${className || ''}`}
+        className={`border border-white text-white font-bold py-2 px-4 rounded-full transition-all overflow-hidden cursor-pointer ${unbounded.className} ${className || ''}`}
         onMouseEnter={handleHoverStart}
         onMouseLeave={handleHoverEnd}
         type="button"
