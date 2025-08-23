@@ -3,7 +3,7 @@ import ProjectItem from "./components/ProjectItem";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col bg-black px-10 md:px-60 py-20 md:py-40">
+    <div className="flex flex-col bg-black px-10 md:px-60 py-0 md:py-40">
       <div className="mb-20 flex gap-2 items-center mx-auto">
         <svg
           fill="#FFFFFF"

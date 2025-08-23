@@ -1,17 +1,9 @@
 "use client";
 
 import { motion, useSpring, useTransform, useScroll } from "framer-motion";
-import { Anton } from "next/font/google";
-import { Unbounded } from "next/font/google";
+import { anton, unbounded } from "@/lib/fonts";
 import { useScrollOpacity } from "@/hooks/useScrollOpacity";
 import { useHeroAnimation } from "@/hooks/useGSAPanimations";
-
-const anton = Anton({ subsets: ["latin"], weight: "400", display: "swap" });
-const unbounded = Unbounded({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
 
 export default function HeroSection() {
   const opacity = useScrollOpacity(300, 1.5);
@@ -26,7 +18,7 @@ export default function HeroSection() {
 
   return (
     <motion.section
-      className="relative min-h-[90vh] md:min-h-[120vh] bg-cover bg-top"
+      className="relative h-[90vh] md:h-[120vh] bg-cover bg-top"
       style={{
         backgroundImage: "url('/hero.png')",
         backgroundPositionY: smoothBackgroundY,
@@ -37,21 +29,21 @@ export default function HeroSection() {
         className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black"
         style={{ opacity }}
       />
-      <div className="absolute inset-0 flex flex-col items-center pt-40 text-white">
-        <div className="flex flex-col gap-0 items-center justify-center text-center">
+      <div className="absolute inset-0 flex flex-col items-center pt-40 md:pt-40 text-white">
+        <div className="flex flex-col gap-2 items-center justify-center text-center">
           <h1
             className={`${anton.className} text-6xl md:text-8xl leading-tight`}
           >
             SHRISTY CHAUDHARY
           </h1>
           <h3
-            className={`${unbounded.className} text-2xl md:text-4xl leading-tight`}
+            className={`${unbounded.className} text-xl md:text-4xl leading-tight`}
           >
             Full stack developer
           </h3>
         </div>
         <div
-          className={`${unbounded.className} text-xl md:text-2xl flex text-center max-w-[500px] pt-40`}
+          className={`${unbounded.className} text-l md:text-2xl flex text-center max-w-[500px] pt-30 md:pt-40 px-1 md:px-0`}
         >
           <p ref={textRef}>
             Crafting seamless experiences,

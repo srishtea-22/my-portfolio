@@ -11,7 +11,7 @@ import {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col bg-black px-10 md:px-60">
+    <div className="flex flex-col bg-black px-10 md:px-60 py-30 md:py-0">
       <div className="mb-20 flex gap-2 items-center mx-auto">
         <svg
           fill="#FFFFFF"

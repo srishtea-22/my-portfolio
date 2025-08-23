@@ -21,7 +21,7 @@ const ProjectItem = ({
   return (
     <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-24">
       <div className="flex flex-col justify-center">
-        <div className="self-end relative md:w-160 md:h-90 flex flex-col justify-center items-center overflow-hidden group hover:scale-95 transtion-transform duration-600">
+        <div className="self-center relative w-80 h-45 md:w-160 md:h-90 flex flex-col justify-center items-center overflow-hidden group hover:scale-95 transtion-transform duration-600">
           <img
             src={imageSrc}
             className="object-cover transition-transform duration-600 group-hover:scale-120"
@@ -31,7 +31,7 @@ const ProjectItem = ({
       <div className="flex flex-col justify-center items-center md:items-start max-w-lg">
         <h1 className={`text-2xl md:text-4xl ${anton.className}`}>{title}</h1>
         <p
-          className={`mt-4 tracking-wide ${unbounded.className} md:w-100 text-gray-300 leading-relaxed text-center md:text-left`}
+          className={`mt-4 tracking-wide ${unbounded.className} w-90 md:w-100 text-gray-300 leading-relaxed text-center md:text-left`}
         >
           {description}
         </p>
