@@ -38,14 +38,14 @@ export default function HeroSection() {
         style={{ opacity }}
       />
       <div className="absolute inset-0 flex flex-col items-center pt-40 text-white">
-        <div className="flex flex-col gap-2 md:gap-0 items-center justify-center text-center">
+        <div className="flex flex-col gap-0 items-center justify-center text-center">
           <h1
             className={`${anton.className} text-6xl md:text-8xl leading-tight`}
           >
             SHRISTY CHAUDHARY
           </h1>
           <h3
-            className={`${unbounded.className} text-3xl md:text-4xl leading-tight`}
+            className={`${unbounded.className} text-2xl md:text-4xl leading-tight`}
           >
             Full stack developer
           </h3>

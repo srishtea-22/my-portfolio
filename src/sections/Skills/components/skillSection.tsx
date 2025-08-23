@@ -1,7 +1,7 @@
 "use client";
 
 import { anton, unbounded } from "@/lib/fonts";
-import { Skill } from "../skillsData";
+import { Skill } from "../../../data/skillsData";
 import { useSkillAnimation } from "@/hooks/useGSAPanimations";
 
 interface SkillSectionProps {

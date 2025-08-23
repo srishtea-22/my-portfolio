@@ -7,7 +7,7 @@ import {
   backendSkills,
   dbCloudSkills,
   toolsPlatformSkills,
-} from "./skillsData";
+} from "../../data/skillsData";
 
 export default function Skills() {
   return (

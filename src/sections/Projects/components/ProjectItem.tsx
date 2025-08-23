@@ -1,3 +1,4 @@
+import { skillIcons } from "@/data/skillIcons";
 import { anton, unbounded } from "@/lib/fonts";
 
 interface ProjectItemProps {
@@ -6,6 +7,7 @@ interface ProjectItemProps {
   imageSrc: string;
   gitLink: string;
   liveLink?: string;
+  skills: string[];
 }
 
 const ProjectItem = ({
@@ -14,6 +16,7 @@ const ProjectItem = ({
   imageSrc,
   gitLink,
   liveLink,
+  skills
 }: ProjectItemProps) => {
   return (
     <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-24">
@@ -25,14 +28,19 @@ const ProjectItem = ({
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center md:items-start max-w-lg">
         <h1 className={`text-2xl md:text-4xl ${anton.className}`}>{title}</h1>
         <p
-          className={`mt-4 tracking-wide ${unbounded.className} text-center md:w-100`}
+          className={`mt-4 tracking-wide ${unbounded.className} md:w-100 text-gray-300 leading-relaxed text-center md:text-left`}
         >
           {description}
         </p>
-        <div className="flex justify-center mt-6 gap-6">
+        <div className="flex items-center mt-6 gap-4">
+          {skills.map((skill, i) => (
+            <div key={i} className="transform hover:scale-120 transition-transform duration-200">{skillIcons[skill]}</div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-6 gap-4">
           <a href={gitLink} target="_blank">
             <svg
               stroke="currentColor"
