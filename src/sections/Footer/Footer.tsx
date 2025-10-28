@@ -70,7 +70,7 @@ export default function Footer() {
             <AnimatedButton
               text="RESUME"
               className="w-28 md:w-[7.4rem]"
-              href="https://drive.google.com/file/d/1fr52dXtHOv6iLFcV0NoGRVuT7fo9KToA/view?usp=sharing"
+              href="https://drive.google.com/file/d/19X3XKaMbFakhMyQZwC0p9Zu5T7yw3SbW/view?usp=sharing"
             />
           </div>
         </div>

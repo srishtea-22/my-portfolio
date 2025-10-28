@@ -27,6 +27,13 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 gap-30 md:gap-10 md:gap-y-40 bg-black text-white p-8 min-h-screen">
         <ProjectItem
+          title="TaskMaster"
+          description="A simple distributed task scheduler written in Go. It's designed to handle large volume of tasks and distribute them across multiple workers for execution."
+          imageSrc="/taskmaster.png"
+          gitLink="https://github.com/srishtea-22/taskmaster"
+          skills={["Go", "Docker", "PostgreSQL"]}
+        />
+        <ProjectItem
           title="Slate"
           description="A real-time note taking app, featuring live updates, preview only sharing, authentication and a clean and
 responsive UI."
