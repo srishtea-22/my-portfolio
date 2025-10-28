@@ -63,12 +63,16 @@ export const backendSkills: Skill[] = [
     icon: skillIcons["Python"],
   },
   {
+    name: "Go",
+    icon: skillIcons["Go"],
+  },
+  {
     name: "C++",
     icon: skillIcons["CPP"],
   },
   {
-    name: "C#",
-    icon: skillIcons["CSharp"],
+    name: "Elixir",
+    icon: skillIcons["Elixir"]
   },
 ];
 
@@ -92,6 +96,10 @@ export const dbCloudSkills: Skill[] = [
   {
     name: "Supabase",
     icon: skillIcons["Supabase"],
+  },
+  {
+    name: "Docker",
+    icon: skillIcons["Docker"],
   },
 ];
 
