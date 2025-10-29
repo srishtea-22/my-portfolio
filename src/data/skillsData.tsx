@@ -97,13 +97,13 @@ export const dbCloudSkills: Skill[] = [
     name: "Supabase",
     icon: skillIcons["Supabase"],
   },
+];
+
+export const toolsPlatformSkills: Skill[] = [
   {
     name: "Docker",
     icon: skillIcons["Docker"],
   },
-];
-
-export const toolsPlatformSkills: Skill[] = [
   {
     name: "Unity",
     icon: skillIcons["Unity"],
